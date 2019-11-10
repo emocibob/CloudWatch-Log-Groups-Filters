@@ -1,0 +1,24 @@
+{
+  "name": "CloudWatch Log Groups Filters",
+  "manifest_version": 2,
+  "version": "1.0",
+  "description": "Create custom CloudWatch log groups filters.",
+  "permissions": ["storage", "tabs"],
+  "background": {
+    "scripts": ["js/browser-polyfill.min.js", "js/utils.js", "js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://console.aws.amazon.com/cloudwatch/home?*"],
+      "js": ["js/browser-polyfill.min.js", "js/utils.js", "js/content.js"],
+      "css": ["css/pure-min.css", "css/custom.css"]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "html/popup.html"
+  },
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}

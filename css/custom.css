@@ -1,0 +1,92 @@
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.button-warning {
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.button-secondary {
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
+
+.button-xsmall {
+  font-size: 70%;
+}
+
+.button-small {
+  font-size: 85%;
+}
+
+.button-large {
+  font-size: 110%;
+}
+
+.button-xlarge {
+  font-size: 125%;
+}
+
+.centered {
+  text-align: center;
+}
+
+#content-wrapper {
+  min-width: 300px;
+  background-color: #fdfdfd;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
+}
+
+.mr-small {
+  margin-right: 0.5em;
+}
+
+.mb-small {
+  margin-bottom: 0.5em;
+}
+
+.mb-xsmall {
+  margin-bottom: 0.25em;
+}
+
+.alert {
+  margin: 0 0 0.3em;
+  padding: 0.3em 1em;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.shown {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.gradually-hidden {
+  display: block;
+  animation: fade-out 1s;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
